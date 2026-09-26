@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Space</title>
+    <style>
+        :root {
+            --bg-color: #fdfbf7;
+            --text-color: #2c2c2c;
+            --accent-color: #8c7a6b;
+            --card-bg: #ffffff;
+            --border-color: #eae3db;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 2rem 2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+
+        header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem 4rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .art-placeholder {
+            background: var(--border-color);
+            height: 200px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Space</h1>
+        <p>A personal collection of my writings, art, journal entries, and daily musings.</p>
+    </header>
+
+    <nav>
+        <a href="#writings">Writings</a>
+        <a href="#art">Art Gallery</a>
+        <a href="#journal">Journal & Blog</a>
+    </nav>
+
+    <main>
+        <!-- Writings Section -->
+        <section id="writings">
+            <h2>Writings & Poetry</h2>
+            <div class="card">
+                <h3>Sample Title: Reflections in the Quiet</h3>
+                <span class="date">Published: September 2026</span>
+                <p>Paste your poems, short stories, or essays right here. You can duplicate this card block whenever you want to add a new piece of writing.</p>
+            </div>
+        </section>
+
+        <!-- Art Gallery Section -->
+        <section id="art">
+            <h2>Art & Creations</h2>
+            <div class="gallery-grid">
+                <div class="art-placeholder">Artwork 1 (Upload image later)</div>
+                <div class="art-placeholder">Artwork 2 (Upload image later)</div>
+                <div class="art-placeholder">Artwork 3 (Upload image later)</div>
+            </div>
+        </section>
+
+        <!-- Journal / Blog Section -->
+        <section id="journal">
+            <h2>Daily Journal & Blog</h2>
+            <div class="card">
+                <h3>Day 1: Starting Fresh</h3>
+                <span class="date">September 26, 2026</span>
+                <p>This is where your daily blog posts or journal entries will go. Talk about your day, your projects, or whatever is on your mind!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Personal Webpage. Built with GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
