@@ -3,211 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elyflynn | Writer & Artist</title>
-    <!-- Bootstrap 5 CSS CDN -->
+    <title>Elyflynn's Space</title>
+    <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts: Inter & Playfair Display for an elegant editorial look -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- Bootstrap Icons for UI flair -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
-
-
+    <!-- Separate Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#sidebarMenu" data-bs-offset="100">
+<body>
 
-    <!-- Left Navigation Sidebar -->
-    <nav id="sidebarMenu" class="sidebar-nav">
-        <div>
-            <!-- Brand / Profile Header -->
-            <div class="mb-5 text-center text-lg-start">
-                <div class="mb-3 d-inline-block position-relative">
-                    <img src="https://placehold.co/90x90/27272a/a855f7?text=EF" alt="Elyflynn" class="rounded-circle border border-purple shadow-sm" style="border-color: var(--accent-purple) !important;">
-                    <span class="position-absolute bottom-0 end-0 p-1 bg-success border border-dark rounded-circle"></span>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Sidebar Navigation -->
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse p-4">
+                <div class="position-sticky">
+                    <h2 class="h4 text-white mb-4 fw-bold">Elyflynn</h2>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a class="nav-link active" href="#writings">Writings</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link" href="#art">Art Gallery</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link" href="#journal">Journal & Blog</a>
+                        </li>
+                    </ul>
                 </div>
-                <h3 class="h4 mb-1 text-white fw-bold">Elyflynn</h3>
-                <p class="text-muted small mb-0">Writer & Visual Artist</p>
-            </div>
+            </nav>
 
-            <!-- Nav Links -->
-            <div class="nav flex-column gap-1">
-                <a class="nav-link-custom active" href="#about">
-                    <i class="bi bi-person"></i> About Me
-                </a>
-                <a class="nav-link-custom" href="#writings">
-                    <i class="bi bi-journal-richtext"></i> Writings & Poetry
-                </a>
-                <a class="nav-link-custom" href="#art">
-                    <i class="bi bi-palette"></i> Art Gallery
-                </a>
-                <a class="nav-link-custom" href="#journal">
-                    <i class="bi bi-chat-left-quote"></i> Daily Journal
-                </a>
-            </div>
-        </div>
+            <!-- Main Content Area -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-5">
+                
+                <!-- Header / Hero -->
+                <header class="mb-5">
+                    <h1 class="display-5 fw-bold text-light">Welcome to My Space</h1>
+                    <p class="lead text-secondary">A personal collection of my writings, art, journal entries, and daily musings.</p>
+                </header>
 
-        <!-- Sidebar Footer / Social Icons -->
-        <div class="pt-4 border-top border-secondary border-opacity-25 text-center text-lg-start">
-            <div class="d-flex justify-content-center justify-content-lg-start gap-3 mb-2">
-                <a href="https://github.com/elyflynn369-cloud" target="_blank" class="text-muted fs-5 hover-purple"><i class="bi bi-github"></i></a>
-                <a href="#" class="text-muted fs-5"><i class="bi bi-twitter-x"></i></a>
-                <a href="#" class="text-muted fs-5"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="text-muted fs-5"><i class="bi bi-envelope"></i></a>
-            </div>
-            <p class="text-muted small mb-0">&copy; 2026 Elyflynn.<br>Hosted on GitHub Pages.</p>
-        </div>
-    </nav>
-
-    <!-- Main Content Area -->
-    <main class="main-content">
-        <div class="container-fluid max-w-4xl" style="max-width: 900px;">
-
-            <!-- About / Hero Section -->
-            <section id="about" class="mb-5 pt-4">
-                <div class="glass-card p-4 p-md-5 position-relative overflow-hidden">
-                    <div class="position-absolute top-0 end-0 p-4 opacity-10 d-none d-md-block">
-                        <i class="bi bi-feather display-1 text-purple"></i>
+                <!-- Writings Section -->
+                <section id="writings" class="mb-5">
+                    <h2 class="text-light border-bottom pb-2 mb-4">Writings & Poetry</h2>
+                    <div class="card bg-dark text-light border-secondary p-4 shadow-sm mb-3">
+                        <h3 class="h5">Sample Title: Reflections in the Quiet</h3>
+                        <span class="text-muted small d-block mb-3">Published: September 2026</span>
+                        <p class="mb-0">Paste your poems, short stories, or essays right here. You can duplicate this card block whenever you want to add a new piece of writing.</p>
                     </div>
-                    <span class="badge badge-custom mb-3">Welcome to my corner</span>
-                    <h1 class="display-5 fw-bold text-white mb-3">Capturing thoughts in ink and pixels.</h1>
-                    <p class="text-muted lead mb-4">
-                        Hello! I'm Elyflynn. This digital sanctuary is where I archive my poetry, prose, digital illustrations, and ongoing journal entries about daily inspiration and creative growth.
-                    </p>
-                    <div class="d-flex gap-3 flex-wrap">
-                        <a href="#writings" class="btn btn-outline-light px-4 rounded-pill">Explore Writings</a>
-                        <a href="#art" class="btn btn-dark px-4 rounded-pill border-secondary">View Artworks</a>
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- Writings & Poetry Section -->
-            <section id="writings" class="mb-5 pt-4">
-                <div class="d-flex align-items-center justify-content-between mb-4">
-                    <h2 class="h3 text-white mb-0"><i class="bi bi-journal-richtext text-purple me-2"></i>Writings & Poetry</h2>
-                    <span class="text-muted small">Updated weekly</span>
-                </div>
-
-                <div class="row g-4">
-                    <div class="col-12">
-                        <article class="glass-card">
-                            <div class="d-flex justify-content-between align-items-start mb-2">
-                                <h3 class="h4 text-white mb-1">Reflections in the Quiet Hour</h3>
-                                <span class="badge badge-custom">Poetry</span>
-                            </div>
-                            <span class="text-muted small d-block mb-3"><i class="bi bi-calendar3 me-1"></i> September 26, 2026</span>
-                            <p class="text-muted mb-3 font-italic">
-                                "The shadows lengthen on the wooden floor,<br>
-                                A whispered secret slipping through the door.<br>
-                                In stillness, all the restless noise departs,<br>
-                                And quiet rhythms mend our wandering hearts..."
-                            </p>
-                            <a href="#" class="text-decoration-none text-purple fw-semibold small">Read full piece <i class="bi bi-arrow-right"></i></a>
-                        </article>
-                    </div>
-
-                    <div class="col-12">
-                        <article class="glass-card">
-                            <div class="d-flex justify-content-between align-items-start mb-2">
-                                <h3 class="h4 text-white mb-1">On the Architecture of Solitude</h3>
-                                <span class="badge badge-custom">Essay</span>
-                            </div>
-                            <span class="text-muted small d-block mb-3"><i class="bi bi-calendar3 me-1"></i> September 18, 2026</span>
-                            <p class="text-muted mb-3">
-                                Exploring how carving out physical space for oneself transforms artistic productivity. True creation requires moments of absolute disconnection from the hum of modern urgency.
-                            </p>
-                            <a href="#" class="text-decoration-none text-purple fw-semibold small">Read full piece <i class="bi bi-arrow-right"></i></a>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Art Gallery Section -->
-            <section id="art" class="mb-5 pt-4">
-                <div class="d-flex align-items-center justify-content-between mb-4">
-                    <h2 class="h3 text-white mb-0"><i class="bi bi-palette text-purple me-2"></i>Art & Visual Creations</h2>
-                    <span class="text-muted small">Digital & Traditional</span>
-                </div>
-
-                <div class="row g-4">
-                    <!-- Art Item 1 -->
-                    <div class="col-md-6">
-                        <div class="art-card">
-                            <img src="https://placehold.co/600x450/181820/a855f7?text=Ethereal+Horizon" alt="Ethereal Horizon" onerror="this.src='https://placehold.co/600x450/27272a/a855f7?text=Artwork+Placeholder'">
-                            <div class="art-overlay">
-                                <h4 class="h5 text-white mb-1">Ethereal Horizon</h4>
-                                <p class="text-muted small mb-0">Digital Illustration • 2026</p>
-                            </div>
+                <!-- Art Gallery Section -->
+                <section id="art" class="mb-5">
+                    <h2 class="text-light border-bottom pb-2 mb-4">Art & Creations</h2>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="art-placeholder text-center p-5 rounded">Artwork 1</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="art-placeholder text-center p-5 rounded">Artwork 2</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="art-placeholder text-center p-5 rounded">Artwork 3</div>
                         </div>
                     </div>
+                </section>
 
-                    <!-- Art Item 2 -->
-                    <div class="col-md-6">
-                        <div class="art-card">
-                            <img src="https://placehold.co/600x450/181820/a855f7?text=Midnight+Botanicals" alt="Midnight Botanicals" onerror="this.src='https://placehold.co/600x450/27272a/a855f7?text=Artwork+Placeholder'">
-                            <div class="art-overlay">
-                                <h4 class="h5 text-white mb-1">Midnight Botanicals</h4>
-                                <p class="text-muted small mb-0">Ink & Watercolor • 2026</p>
-                            </div>
-                        </div>
+                <!-- Journal / Blog Section -->
+                <section id="journal" class="mb-5">
+                    <h2 class="text-light border-bottom pb-2 mb-4">Daily Journal & Blog</h2>
+                    <div class="card bg-dark text-light border-secondary p-4 shadow-sm mb-3">
+                        <h3 class="h5">Day 1: Starting Fresh</h3>
+                        <span class="text-muted small d-block mb-3">September 26, 2026</span>
+                        <p class="mb-0">This is where your daily blog posts or journal entries will go. Talk about your day, your projects, or whatever is on your mind!</p>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <!-- Journal & Blog Section -->
-            <section id="journal" class="mb-5 pt-4">
-                <div class="d-flex align-items-center justify-content-between mb-4">
-                    <h2 class="h3 text-white mb-0"><i class="bi bi-chat-left-quote text-purple me-2"></i>Daily Journal & Notes</h2>
-                    <span class="text-muted small">Musings</span>
-                </div>
-
-                <div class="glass-card mb-3">
-                    <div class="d-flex justify-content-between align-items-start mb-2">
-                        <h3 class="h5 text-white mb-0">Day 1: Setting Up the Cloud Sanctuary</h3>
-                        <span class="text-muted small">Sept 26, 2026</span>
-                    </div>
-                    <p class="text-muted mb-0">
-                        Finally got my GitHub Pages repository connected with a clean transparent sidebar layout. It feels amazing to have a digital home that is completely mine, built without clunky site builders, just pure clean code hosted in the cloud.
-                    </p>
-                </div>
-
-                <div class="glass-card">
-                    <div class="d-flex justify-content-between align-items-start mb-2">
-                        <h3 class="h5 text-white mb-0">Embracing Imperfection in Sketches</h3>
-                        <span class="text-muted small">Sept 22, 2026</span>
-                    </div>
-                    <p class="text-muted mb-0">
-                        Spent the morning letting go of rigid line work. Realized that the charm of handmade art often lives in the messy, unpolished strokes where the artist's hand was figuring things out in real-time.
-                    </p>
-                </div>
-            </section>
-
-            <!-- Footer -->
-            <footer class="text-center py-4 border-top border-secondary border-opacity-25 mt-5">
-                <p class="text-muted small mb-0">Crafted with passion by Elyflynn &bull; Powered by Bootstrap 5</p>
-            </footer>
-
+                <footer class="text-muted text-center pt-4 border-top border-secondary">
+                    <p>&copy; 2026 Elyflynn. Built with GitHub Pages.</p>
+                </footer>
+            </main>
         </div>
-    </main>
+    </div>
 
-    <!-- Bootstrap JS Bundle CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Additional smooth navigation enhancements
-        document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                // On smaller screens, collapse nav behavior if needed
-                const targetId = this.getAttribute('href');
-                if(targetId.startsWith('#')) {
-                    e.preventDefault();
-                    const targetElement = document.querySelector(targetId);
-                    if(targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        });
-    </script>
 </body>
 </html>
