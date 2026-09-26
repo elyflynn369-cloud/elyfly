@@ -383,6 +383,23 @@
                 }
             });
         });
+
+        // <!-- JavaScript to Handle Theme Toggle -->
+   
+        const toggleButton = document.getElementById('btn-theme-toggle');
+        const themeText = document.getElementById('theme-text');
+        const htmlElement = document.documentElement;
+
+        toggleButton.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-bs-theme');
+            if (currentTheme === 'dark') {
+                htmlElement.setAttribute('data-bs-theme', 'light');
+                themeText.textContent = '🌙 Dark Mode';
+            } else {
+                htmlElement.setAttribute('data-bs-theme', 'dark');
+                themeText.textContent = '☀️ Light Mode';
+            }
+        });
     </script>
 </body>
 </html>
