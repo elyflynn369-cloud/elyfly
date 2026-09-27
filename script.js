@@ -1,33 +1,27 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const htmlElement = document.documentElement;
+    const desktopText = document.getElementById('theme-text-desktop');
+    const mobileToggle = document.getElementById('btn-theme-toggle-mobile');
+    const desktopToggle = document.getElementById('btn-theme-toggle-desktop');
 
- document.querySelectorAll('.sidebar-nav a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                // On smaller screens, collapse nav behavior if needed
-                const targetId = this.getAttribute('href');
-                if(targetId.startsWith('#')) {
-                    e.preventDefault();
-                    const targetElement = document.querySelector(targetId);
-                    if(targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        });
+    function toggleTheme() {
+        const currentTheme = htmlElement.getAttribute('data-bs-theme');
+        if (currentTheme === 'dark') {
+            htmlElement.setAttribute('data-bs-theme', 'light');
+            if (desktopText) desktopText.textContent = '🌙 Dark Mode';
+            if (mobileToggle) mobileToggle.textContent = '🌙';
+        } else {
+            htmlElement.setAttribute('data-bs-theme', 'dark');
+            if (desktopText) desktopText.textContent = '☀️ Light Mode';
+            if (mobileToggle) mobileToggle.textContent = '☀️';
+        }
+    }
 
-        // <!-- JavaScript to Handle Theme Toggle -->
-   
-        const toggleButton = document.getElementById('btn-theme-toggle');
-        const themeText = document.getElementById('theme-text');
-        const htmlElement = document.documentElement;
-
-        toggleButton.addEventListener('click', () => {
-            const currentTheme = htmlElement.getAttribute('data-bs-theme');
-            if (currentTheme === 'dark') {
-                htmlElement.setAttribute('data-bs-theme', 'light');
-                themeText.textContent = '🌙 Dark Mode';
-            } else {
-                htmlElement.setAttribute('data-bs-theme', 'dark');
-                themeText.textContent = '☀️ Light Mode';
-            }
-        });
+    if (desktopToggle) {
+        desktopToggle.addEventListener('click', toggleTheme);
+    }
+    
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', toggleTheme);
+    }
+});
