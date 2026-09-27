@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <!-- Mobile Floating Navigation Bar (Visible only on small screens) -->
+    <!-- Mobile Floating Navigation Bar -->
     <nav class="mobile-floating-nav d-md-none fixed-bottom m-3 p-2 rounded-pill shadow-lg d-flex justify-content-around align-items-center">
         <a class="nav-link px-2 py-1 text-center small" href="#writings">Writings</a>
         <a class="nav-link px-2 py-1 text-center small" href="#art">Art</a>
@@ -21,7 +21,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <!-- Desktop Left Sidebar Navigation (Hidden on mobile phones) -->
+            <!-- Desktop Left Sidebar Navigation -->
             <nav class="col-md-3 col-lg-2 d-none d-md-flex sidebar p-4 flex-column justify-content-between">
                 <div>
                     <h2 class="h4 mb-4 fw-bold">Elyflynn</h2>
@@ -98,28 +98,7 @@
         </div>
     </div>
 
-    <!-- JavaScript to Handle Theme Toggle for Both Buttons -->
-    <script>
-        const htmlElement = document.documentElement;
-        const desktopText = document.getElementById('theme-text-desktop');
-        const mobileToggle = document.getElementById('btn-theme-toggle-mobile');
-        const desktopToggle = document.getElementById('btn-theme-toggle-desktop');
-
-        function toggleTheme() {
-            const currentTheme = htmlElement.getAttribute('data-bs-theme');
-            if (currentTheme === 'dark') {
-                htmlElement.setAttribute('data-bs-theme', 'light');
-                if(desktopText) desktopText.textContent = '🌙 Dark Mode';
-                if(mobileToggle) mobileToggle.textContent = '🌙';
-            } else {
-                htmlElement.setAttribute('data-bs-theme', 'dark');
-                if(desktopText) desktopText.textContent = '☀️ Light Mode';
-                if(mobileToggle) mobileToggle.textContent = '☀️';
-            }
-        }
-
-        if(desktopToggle) desktopToggle.addEventListener('click', toggleTheme);
-        if(mobileToggle) mobileToggle.addEventListener('click', toggleTheme);
-    </script>
+    <!-- Separate Custom JavaScript File -->
+    <script src="script.js"></script>
 </body>
 </html>
